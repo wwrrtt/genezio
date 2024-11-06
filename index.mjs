@@ -1,5 +1,4 @@
 import express from "express";
-import Serverless from "serverless-http";
 
 const app = express();
 
@@ -12,12 +11,10 @@ app.get("/users", (req, res) => {
 });
 
 // You don't need to listen to the port when using serverless functions in production
-if (process.env.NODE_ENV === "dev") {
-  app.listen(8080, () => {
-    console.log(
-      "Server is running on port 8080. Check the app on http://localhost:8080"
-    );
-  });
-}
+app.listen(8080, () => {
+  console.log(
+    "Server is running on port 8080. Check the app on http://localhost:8080"
+  );
+});
 
 export const handler = Serverless(app);
