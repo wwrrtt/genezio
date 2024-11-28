@@ -1,6 +1,6 @@
 backend:
     functions:
-        - entry: index.mjs
+        - entry: index.js
           name: express-getting-started-function
           path: ./
           type: httpServer
