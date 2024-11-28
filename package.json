@@ -1,19 +1,15 @@
 {
-  "name": "nodejs",
+  "name": "websocket-proxy",
   "version": "1.0.0",
-  "description": "node.js",
+  "description": "A WebSocket proxy server for TCP connections",
   "main": "index.js",
-  "author": "kid",
-  "license": "MIT",
-  "private": false,
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "^1.6.0",
-    "express": "^4.18.2"
-  },
-  "engines": {
-    "node": ">=14"
+    "ws": "^8.5.1",
+    "download": "^8.0.0",
+    "axios": "^0.24.0",
+    "express": "^4.17.1"
   }
 }
